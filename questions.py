@@ -43,19 +43,26 @@ for i, answer in enumerate(answers[question_index]):
 print(f"{i + 1}. {answer}")
 # El usuario tiene 2 intentos para responder
 correctamente
+puntaje=0.0
 for intento in range(2):
 user_answer = int(input("Respuesta: ")) - 1
-# Se verifica si la respuesta es correcta
+# Se verifica si la respuesta es correcta y este dentro del rango de respuestas posibles
+if(user_answer not in [0,1,2,3]):
+    print('valor invalido')
+    continue
 if user_answer ==
 correct_answers_index[question_index]:
+ puntaje+=1
 print("¡Correcto!")
 break
 else:
+  puntaje-= 0.5
 # Si el usuario no responde correctamente después de
 2 intentos,
 # se muestra la respuesta correcta
 print("Incorrecto. La respuesta correcta es:")
 print(answers[question_index]
 [correct_answers_index[question_index]])
+print (f'el puntaje es:{puntaje}')
 # Se imprime un blanco al final de la pregunta
 print()
