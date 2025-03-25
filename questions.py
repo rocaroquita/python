@@ -29,7 +29,7 @@ answers = [
 mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
 combinado= list(zip(questions, answers, correct_answers_index))
-questions_to_ask = random.choices(combinado, k=3)
+questions_to_ask = random.sample(combinado, k=3) #podria ser random.choices pero asi no se repiten
 # El usuario deberá contestar 3 preguntas
 for _ in range(3):
 # Se selecciona una pregunta aleatoria
