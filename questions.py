@@ -28,11 +28,8 @@ answers = [
 # Índice de la respuesta correcta para cada pregunta, el el
 mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
-6.
-7.
-1.
-2.
-3.
+combinado= list(zip(questions, answers, correct_answers_index))
+questions_to_ask = random.choices(combinado, k=3)
 # El usuario deberá contestar 3 preguntas
 for _ in range(3):
 # Se selecciona una pregunta aleatoria
