@@ -1,6 +1,7 @@
 # python
 Rocio Carrizo Senra
 legajo:24625/1
+
 #Proyecto: Analisis de Partidas y MVPs
 Este ejercicio analiza los resultados de varias partidas, generando rankings y determinando los MVPs. El codigo fuente con las funciones necesarias se encuentra en el directorio src, mientras que los notebooks de analisis estan en la carpeta notebooks.
 
